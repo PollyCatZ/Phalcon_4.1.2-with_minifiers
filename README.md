@@ -9,11 +9,17 @@
 ## Сборка из исходников
 
 cd /tmp/cphalcon4
+
 zephir fullclean
+
 zephir compile
 
 cd ext
+
 phpize
+
 ./configure
+
 make && make install
+
 /etc/init.d/php7.4-fpm restart
