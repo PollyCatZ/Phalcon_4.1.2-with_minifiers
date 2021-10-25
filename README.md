@@ -12,12 +12,21 @@
 ## Сборка из не официальных исходников
 
 Клонировать sources
+
 cd /sources
+
 zephir fullclean
+
 zephir compile
+
 cd ext
+
 phpize
+
 ./configure
+
 make && make install
+
 Добавить phalcon.so в php.ini
+
 /etc/init.d/php7.4-fpm restart
