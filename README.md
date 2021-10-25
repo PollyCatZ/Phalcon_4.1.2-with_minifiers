@@ -3,23 +3,21 @@
 
 ## Установка
 
-Скопировать phalcon.so в директорию с расширениями PHP и прописать в php.ini 
+Скопировать phalcon.so в директорию с расширениями PHP и добавить в php.ini
 
+## Замена файлов
 
-## Сборка из исходников
+Клонировать официальный репозиторий версии 4.1.2 и заменить файлы из директории replacements
 
-cd /tmp/cphalcon4
+## Сборка из не официальных исходников
 
+Клонировать sources
+cd /sources
 zephir fullclean
-
 zephir compile
-
 cd ext
-
 phpize
-
 ./configure
-
 make && make install
-
+Добавить phalcon.so в php.ini
 /etc/init.d/php7.4-fpm restart
