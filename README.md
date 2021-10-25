@@ -40,4 +40,4 @@ make && make install
 /etc/init.d/php7.4-fpm restart
 
 
-## Для компиляции из исходников у Вас должны быть установлены PHP7.4, Zephir Parser, Zephir, расширение php-psr.
+# Для компиляции из исходников у Вас должны быть установлены PHP7.4, Zephir Parser, Zephir, расширение php-psr.
